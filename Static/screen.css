@@ -1,0 +1,50 @@
+* {
+  outline: 1px rgba(255,0,0,0.1) solid;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Monda');
+@import url('https://fonts.googleapis.com/css?family=Yellowtail');
+
+
+#logo {
+  padding-left: 25px;
+  width: 320px;
+}
+
+#header {
+  background-color: #DFE;
+  background-image: url(checks.svg), url(checks.svg);
+  background-position: top, bottom;
+  background-repeat: repeat-x;
+  background-size: 35px;
+  border-bottom: white 10px solid;
+  margin-bottom: 40px;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+body {
+  background-color: #600;
+  color: #2A8;
+  font-family: 'Monda', sans-serif;
+  margin: 0;
+}
+
+h1 {
+  color: #B00;
+  font-family: 'Yellowtail', cursive;
+  font-size: 3em;
+  margin: 0;
+}
+
+h2 {
+  color: #B00;
+  font-family: 'Yellowtail', cursive;
+}
+
+a {
+  color: #DA0;
+  text-decoration: none;
+}

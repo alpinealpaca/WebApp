@@ -12,7 +12,7 @@
 # Copy as Pathname will appear and you can paste this into the following command in place of [FILEPATH].
 
 #! /bin/sh
-cd /Users/21013292/Documents/GitHub/212-Burgers
+cd /Users/21013292/Documents/GitHub/WebApp
 source env/bin/activate
 export FLASK_APP=run.py
 export FLASK_DEBUG=1

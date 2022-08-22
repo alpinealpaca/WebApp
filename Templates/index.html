@@ -1,0 +1,34 @@
+
+
+{% extends "base.html" %}
+
+{% block title %}212 Burgers{% endblock %}
+
+{% block content %}
+    <div id="header">
+
+      <img src="{{ url_for('static', filename='logo.svg') }}" id="logo" />
+      <h1>Welcome!</h1>
+      <em>SHROOMS &bull; Shrooms &bull; shrooms</em>
+
+
+    </div>
+
+    <div id="menu">
+
+      <h1>Menu</h1>
+
+      <div>
+        <h2>Burgers</h2>
+        <ol class="menu-items">
+          {% for mushroom in mushroomsdata %}
+          <li>{{ mushroom[0] }} <span class="price">{{ mushroom[1] }}</span></li>
+<!-- <img src="caps/{{ mushroom[1] }}.png"> -->
+          {% endfor %}
+        </ol>
+
+
+      </div>
+
+    </div>
+{% endblock %}
