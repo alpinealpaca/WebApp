@@ -12,8 +12,10 @@
 # Copy as Pathname will appear and you can paste this into the following command in place of [FILEPATH].
 
 #! /bin/sh
-cd /Users/21013292/Documents/GitHub/WebApp
-source env/bin/activate
-export FLASK_APP=run.py
-export FLASK_DEBUG=1
-flask run
+cd "E:\Sarah's Stuff\Web Development\WebApp"
+#python3 -m venv env
+env\Scripts\activate.bat
+#source env/bin/activate
+set FLASK_APP=run.py
+set FLASK_DEBUG=1
+py -m flask run

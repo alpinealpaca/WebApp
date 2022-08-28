@@ -17,13 +17,42 @@
     <div id="menu">
 
       <h1>Menu</h1>
+        
+        <h1>Welcome!</h1>
+      <em>BURGERS &bull; DRINKS &bull; FRIES</em>
+        
+      <p>
+        <a class="btn-green" href="{{ url_for('myshroom') }}">order now</a>
+      </p> 
+        
+        <div id="houserules"> <!-- big div for the text -->
+            <div class="blackbox"> <!-- textbox -->
+                <div class="title"><h1>Title</h1></div>
+                <div class="container">
+                    
+                    <p><span class="wave">^ </span> line 1.<br/>
+                    <br/><span class="wave">^ </span> line 2<br/>
+                    <br/> <span class="wave">^ </span>3333<br/> 
+                </div>
+            </div>
+        </div>        
+        
+        
+    <div class="footer">
+        <div class="container-fluid">
+            <p>Footer...................... </p>
+            <img src="convex.png"width="500" height="500">
+       </div> 
+    </div> 
 
       <div>
         <h2>Burgers</h2>
         <ol class="menu-items">
           {% for mushroom in mushroomsdata %}
           <li>{{ mushroom[0] }} <span class="price">{{ mushroom[1] }}</span></li>
+            <li>{{ mushroom[1] }} <span class="price">{{ mushroom[2] }}</span></li>
 <!-- <img src="caps/{{ mushroom[1] }}.png"> -->
+            <img src="convex/{{ mushroom[1] }}.png">
           {% endfor %}
         </ol>
 
