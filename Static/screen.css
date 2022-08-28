@@ -13,38 +13,143 @@
 }
 
 #header {
-  background-color: #DFE;
-  background-image: url(checks.svg), url(checks.svg);
+  /*background-color: #DFE;
+  background-image: url(largeshroombg.jpg), url(neon-mushrooms-pattern.jpg);
   background-position: top, bottom;
   background-repeat: repeat-x;
-  background-size: 35px;
-  border-bottom: white 10px solid;
-  margin-bottom: 40px;
+  background-size: 35px; */
+  border-bottom: white 10px solid; 
+  margin-bottom: 50px; 
   padding-top: 50px;
-  padding-bottom: 40px;
-  text-align: center;
+  padding-bottom: 40px; 
+  text-align: center; 
+    background-image: url(blue_neon3c.png);
+    background-repeat: no-repeat;
 }
 
 body {
-  background-color: #600;
+  background-color: black;
+    background-image: url(neon-mushrooms-pattern2.jpg);
   color: #2A8;
   font-family: 'Monda', sans-serif;
   margin: 0;
 }
 
 h1 {
-  color: #B00;
+  color: #0B0;
   font-family: 'Yellowtail', cursive;
   font-size: 3em;
   margin: 0;
 }
 
 h2 {
-  color: #B00;
+  color: #0B0;
   font-family: 'Yellowtail', cursive;
 }
 
 a {
-  color: #DA0;
+  color: #AD0;
   text-decoration: none;
 }
+
+/****************************//****************************//****************************/
+
+#menu {
+  background-color: #000000EE;
+  
+  /*background-size: 46px; */
+  border-bottom: #2A8 10px solid;
+  border-top: #2A8 4px solid;
+  display: grid;
+  margin: auto;
+  max-width: 1140px;
+  padding: 20px 0;
+  padding-bottom: 2.5em;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+/* descendant selectors */
+
+#menu h1 {
+  grid-column: span 3;
+  padding-bottom: 0.3em;
+  text-align: center;
+}
+
+#menu h2 {
+  margin-top: 0.5em;
+  text-align: center;
+}
+
+#menu ol,
+#menu ul {
+  padding-left: 2em;
+}
+
+#menu li {
+  margin-top: 0.4em;
+  width: 100%;
+}
+
+#menu .price {
+  float: right;
+  padding-right: 1em;
+}
+
+#menu div {
+  grid-column: span 3;
+  margin: 0 1em;
+}
+
+#menu div:nth-child(3) {
+  border-bottom: 3px solid #2A8;
+  border-top: 3px solid #2A8;
+}
+
+/* media query */
+
+@media only screen and (min-width: 720px) {
+
+  #menu div {
+    grid-column: auto;
+    margin: 0;
+  }
+
+  #menu div:nth-child(3) {
+    border: none;
+    border-left: 3px solid #2A8;
+    border-right: 3px solid #2A8;
+  }
+    /****************************//****************************/
+
+.btn-green {
+    background-color: lawngreen;
+    border: 3px solid #0A0;
+    border-radius: 5px;
+    color: #7D0;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.5em;
+    padding: 0 10px 2px 10px;
+    transition: background-color 0.5s;
+    transition: color 0.5s;
+}
+
+.btn-green:hover {
+    color: greenyellow;
+    background-color: #0A0;
+    text-decoration: none;
+    transition: background-color 0.5s;
+    transition: color 0.5s;
+  }
+    
+    #nicebigdiv {
+        background-color: #05565500;
+        
+    }
+    
+    .boxfortext {
+        background-color:black;
+    }
+

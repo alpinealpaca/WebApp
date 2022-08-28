@@ -22,3 +22,12 @@ def get_all(db):
     for row in cur:
         mushrooms.append(list(row))
     return {'mushrooms':mushrooms}
+
+
+@app.route('/myshroom')
+def myshroom():
+    return render_template('myshroom.html')
+    #db = sqlite3.connect(MENUDB)
+    #menu = fetchmushroomsdata(db)
+   # db.close()
+  
