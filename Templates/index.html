@@ -8,7 +8,7 @@
     <div id="header">
 
       <img src="{{ url_for('static', filename='shroom_logo9.png') }}" id="logo" />
-      <h1>Welcome!</h1>
+      <h1>Shroom Generator</h1>
       <em>SHROOMS &bull; Shrooms &bull; shrooms</em>
 
 
@@ -16,53 +16,26 @@
 
     <div id="menu">
 
-      <h1>Menu</h1>
+      
         
-        <h1>Welcome!</h1>
+        <h2>Personalised Mushrooms</h2>
       <em>Need a mushroom?</em>
         
       <p>
         <a class="btn-green" href="{{ url_for('myshroom') }}">Generate Now</a>
       </p> 
         
-        <div id="nicebigdiv"> <!-- big div for the text -->
-            <div class="boxfortext"> <!-- textbox -->
-                <div class="title"><h1>Title</h1></div>
-                <div class="container">
-                    
-                    <p><span class="wave">^ </span> line 1.<br/>
-                    <br/><span class="wave">^ </span> line 2<br/>
-                    <br/> <span class="wave">^ </span>3333<br/> 
-                </div>
-            </div>
-        </div>        
+          
         
         
     <div class="footer">
         <div class="container-fluid">
             <p>Footer...................... </p>
-            <img src="convex.png"width="500" height="500">
+            
        </div> 
     </div> 
 
-      <div>
-        <h2>Burgers</h2>
-        <ol class="menu-items">
-          {% for mushroom in mushroomsdata %}
-          
-            <li>{{ mushroom[11] }} <span class="shape">{{ mushroom[3] }}</span></li>
-            <li>{{ mushroom[20] }} <span class="shape">{{ mushroom[4] }}</span></li>
-
-            <img src="static/{{mushroom[1]}}.png">
-            <img src="static/{{ mushroom[8] }}.png">
-            <img src="static/{{ mushroom[11] }}.png">
-            <img src="static/{{ mushroom[4] }}.png">
-            <img src="static/{{ mushroom[5] }}.png">
-          {% endfor %}
-        </ol>
-
-
-      </div>  
+      
 
     </div>
 {% endblock %}

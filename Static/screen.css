@@ -1,10 +1,9 @@
-* {
-  outline: 1px rgba(255,0,0,0.1) solid;
-}
+
 
 
 @import url('https://fonts.googleapis.com/css?family=Monda');
 @import url('https://fonts.googleapis.com/css?family=Yellowtail');
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
 
 
 #logo {
@@ -36,15 +35,17 @@ body {
 }
 
 h1 {
-  color: #0B0;
-  font-family: 'Yellowtail', cursive;
+  color: #ca38cc;
+  font-family: 'Covered By Your Grace', 'Yellowtail', cursive;
   font-size: 3em;
   margin: 0;
 }
 
 h2 {
-  color: #0B0;
-  font-family: 'Yellowtail', cursive;
+  color: #18dad6;
+  font-family: 'Covered By Your Grace', 'Yellowtail', cursive;
+    text-align: center;
+    font-size: 40px;
 }
 
 a {
@@ -68,9 +69,18 @@ a {
   grid-template-rows: auto;
 }
 
-/*.result {
-    padding-left: 25%;
-}*/
+.result {
+    
+}
+
+.images {
+    
+}
+
+
+.shape {
+    position: absolute;
+} 
 
 /* descendant selectors */
 
@@ -96,14 +106,10 @@ a {
 }
 
 #menu .shape {
-  float: right;
+  float: center;
   padding-right: 1em;
  
 }
-
-/*.shape {
-    position: absolute;
-} */
 
 #menu div {
   grid-column: span 3;

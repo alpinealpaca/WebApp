@@ -14,27 +14,42 @@
 
     <div id="menu">
 
-      <h1>Shroooom</h1>
+      <h1>Your Shroom</h1>
         
         
         
     
 
       <div>
-        <h2>Your VroomShroom</h2>
-        <ol class="result">
+        
+        <div class="result">
           {% for mushroom in mushroomsdata %}
-          <li>{{ mushroom[0] }} <span class="shape">{{ mushroom[1].png }}</span></li>
+          <!--<li>{{ mushroom[0] }} <span class="shape">{{ mushroom[1].png }}</span></li>
             <li>{{ mushroom[1] }} <span class="shape">{{ mushroom[2] }}</span></li>
-            <li>{{ mushroom[11] }} <span class="shape">{{ mushroom[3] }}</span></li>
-            <li>{{ mushroom[20] }} <span class="shape">{{ mushroom[4] }}</span></li>
+            <li>{{ mushroom[11] }} <span class="shape">{{ mushroom[3] }}</span></li>-->
+            
+            <h2 style="font-family: cursive">{{ mushroom[10] }}
+            {{ mushroom[2] }}
+            {{ mushroom[0] }}
+            {{ mushroom[4] }}</h2>
+            
+            <div class="images">
+                <span class="shape"><img src="static/{{ mushroom[0] }}.png"> </span>
 
-            <img src="static/{{ mushroom[1] }}.png">
-            <img src="static/{{ mushroom[8] }}.png">
-            <img src="static/{{ mushroom[11] }}.png">
-            <img src="static/{{ mushroom[4] }}.png">
+                <span class="shape"><img src="static/{{ mushroom[11] }}.png"></span>
+
+                <span class="shape"><img src="static/{{ mushroom[1] }}.png"></span>
+
+                <span class="shape"><img src="static/{{ mushroom[8] }}.png">
+
+                </span>
+            </div>
+            
+            
+            
+            
           {% endfor %}
-        </ol>
+        </div>
 
 
       </div>
