@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Monda');
 @import url('https://fonts.googleapis.com/css?family=Yellowtail');
 @import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 
 #logo {
@@ -32,6 +33,8 @@ body {
   color: #2A8;
   font-family: 'Monda', sans-serif;
   margin: 0;
+    padding-bottom: 50px;
+    
 }
 
 h1 {
@@ -43,21 +46,21 @@ h1 {
 
 h2 {
   color: #18dad6;
-  font-family: 'Covered By Your Grace', 'Yellowtail', cursive;
+  font-family: 'Indie Flower', cursive;
     text-align: center;
     font-size: 40px;
 }
 
 a {
-  color: #AD0;
+  color: #000;
   text-decoration: none;
 }
 
 /****************************//****************************//****************************/
 
-#menu {
+/*#menu {
   background-color: #000000EE;
-  /*background-size: 46px; */
+  /*background-size: 46px; 
   border-bottom: #5DA 10px solid;
   border-top: #5DA 4px solid;
   display: grid;
@@ -67,14 +70,38 @@ a {
   padding-bottom: 2.5em;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
+} */
+
+#backdrop1 {
+    background-color: #000000EE;
+    border-bottom: #5DA 7px solid;
+    border-top: #5DA 7px solid;
+    border-left: #5DA 7px solid;
+    border-right: #5DA 7px solid;
+    padding: 20px 0;
+    padding-bottom: 15%;
+    text-align: center;
+    max-width: 1140px;
+    margin: auto;
 }
 
-.result {
-    
+#backdrop2 {
+    background-color: #000000EE;
+    border-bottom: #5DA 7px solid;
+    border-left: #5DA 7px solid;
+    border-right: #5DA 7px solid;
+    border-top: #5DA 7px solid;
+    padding: 20px 0;
+    padding-bottom: 50%;
+    text-align: center;
+    max-width: 1140px;
+    margin: auto;
+    max-height: 250px;
 }
+
 
 .images {
-    
+    padding-right: 45%;
 }
 
 
@@ -95,15 +122,6 @@ a {
   text-align: center;
 }
 
-#menu ol,
-#menu ul {
-  padding-left: 2em;
-}
-
-#menu li {
-  margin-top: 0.4em;
-  width: 100%;
-}
 
 #menu .shape {
   float: center;
@@ -112,9 +130,9 @@ a {
 }
 
 #menu div {
-  grid-column: span 3;
   margin: 0 1em;
 }
+
 
 #menu div:nth-child(3) {
   border-bottom: 3px solid #2A8;
@@ -126,7 +144,7 @@ a {
 @media only screen and (min-width: 720px) {
 
   #menu div {
-    grid-column: auto;
+    
     margin: 0;
   }
 
@@ -138,10 +156,10 @@ a {
     /****************************//****************************/
 
 .btn-green {
-    background-color: lawngreen;
-    border: 3px solid #0A0;
+    background-color: #00cfff;
+    border: 5px solid #008BBB;
     border-radius: 5px;
-    color: #7D0;
+    color: black;
     cursor: pointer;
     display: inline-block;
     font-size: 1.5em;
@@ -152,18 +170,22 @@ a {
 
 .btn-green:hover {
     color: greenyellow;
-    background-color: #0A0;
+    background-color: #18dad6;
     text-decoration: none;
     transition: background-color 0.5s;
     transition: color 0.5s;
   }
     
-    #nicebigdiv {
-        background-color: #05565500;
+    #again {
+        padding-top: 45%;
+        margin:auto;
         
-    }
+        
+        
+    }  
     
-    .boxfortext {
-        background-color:black;
-    }
+  /* .footer {
+        text-align: center;
+        padding-top: 50%;
+    } */
 

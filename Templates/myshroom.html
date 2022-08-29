@@ -6,13 +6,13 @@
     <div id="header">
 
       <img src="{{ url_for('static', filename='shroom_logo9.png') }}" id="logo" />
-      <h1>Welcome!</h1>
-      <em>SHROOMS &bull; Shrooms &bull; shrooms</em>
+      <a href="{{ url_for('index') }}"><h1>Shroom Generator</h1></a>
+      <em>Toadstools &bull; Fungus &bull; Mushrooms</em>
 
 
     </div>
 
-    <div id="menu">
+    <div id="backdrop2">
 
       <h1>Your Shroom</h1>
         
@@ -28,7 +28,7 @@
             <li>{{ mushroom[1] }} <span class="shape">{{ mushroom[2] }}</span></li>
             <li>{{ mushroom[11] }} <span class="shape">{{ mushroom[3] }}</span></li>-->
             
-            <h2 style="font-family: cursive">{{ mushroom[10] }}
+            <h2>
             {{ mushroom[2] }}
             {{ mushroom[0] }}
             {{ mushroom[4] }}</h2>
@@ -44,15 +44,16 @@
 
                 </span>
             </div>
-            
-            
-            
-            
-          {% endfor %}
+          {% endfor %}         
         </div>
-
-
       </div>
-
+        
+    <div id="again">
+        <p>
+            <a class="btn-green" href="{{ url_for('myshroom') }}">Generate</a>
+        </p> 
     </div>
+    </div>
+
+
 {% endblock %}

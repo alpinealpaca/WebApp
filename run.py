@@ -12,7 +12,6 @@ def index():
     db.close()
     return render_template(
     'index.html',
-    disclaimer='Schroom.inc',
     mushroomsdata=menu['mushrooms']
     )
 
@@ -30,7 +29,6 @@ def myshroom():
     menu = get_all(db)
     db.close() 
     return render_template('myshroom.html',
-    disclaimer='Schroom.inc',
     mushroomsdata=menu['mushrooms']
     )
     #db = sqlite3.connect(MENUDB)
