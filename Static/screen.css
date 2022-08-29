@@ -24,7 +24,7 @@
   padding-bottom: 40px; 
   text-align: center; 
     background-image: url(blue_neon3c.png);
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
 }
 
 body {
@@ -56,10 +56,9 @@ a {
 
 #menu {
   background-color: #000000EE;
-  
   /*background-size: 46px; */
-  border-bottom: #2A8 10px solid;
-  border-top: #2A8 4px solid;
+  border-bottom: #5DA 10px solid;
+  border-top: #5DA 4px solid;
   display: grid;
   margin: auto;
   max-width: 1140px;
@@ -68,6 +67,10 @@ a {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
 }
+
+/*.result {
+    padding-left: 25%;
+}*/
 
 /* descendant selectors */
 
@@ -92,10 +95,15 @@ a {
   width: 100%;
 }
 
-#menu .price {
+#menu .shape {
   float: right;
   padding-right: 1em;
+ 
 }
+
+/*.shape {
+    position: absolute;
+} */
 
 #menu div {
   grid-column: span 3;
@@ -104,7 +112,7 @@ a {
 
 #menu div:nth-child(3) {
   border-bottom: 3px solid #2A8;
-  border-top: 3px solid #2A8;
+  border-top: 3px solid #5DB;
 }
 
 /* media query */

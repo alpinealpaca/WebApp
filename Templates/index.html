@@ -49,15 +49,20 @@
         <h2>Burgers</h2>
         <ol class="menu-items">
           {% for mushroom in mushroomsdata %}
-          <li>{{ mushroom[0] }} <span class="price">{{ mushroom[1] }}</span></li>
-            <li>{{ mushroom[1] }} <span class="price">{{ mushroom[2] }}</span></li>
-<!-- <img src="caps/{{ mushroom[1] }}.png"> -->
-            <img src="convex/{{ mushroom[1] }}.png">
+          
+            <li>{{ mushroom[11] }} <span class="shape">{{ mushroom[3] }}</span></li>
+            <li>{{ mushroom[20] }} <span class="shape">{{ mushroom[4] }}</span></li>
+
+            <img src="static/{{mushroom[1]}}.png">
+            <img src="static/{{ mushroom[8] }}.png">
+            <img src="static/{{ mushroom[11] }}.png">
+            <img src="static/{{ mushroom[4] }}.png">
+            <img src="static/{{ mushroom[5] }}.png">
           {% endfor %}
         </ol>
 
 
-      </div>
+      </div>  
 
     </div>
 {% endblock %}

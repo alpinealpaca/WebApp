@@ -5,7 +5,7 @@
 {% block content %}
     <div id="header">
 
-      <img src="{{ url_for('static', filename='logo.svg') }}" id="logo" />
+      <img src="{{ url_for('static', filename='shroom_logo9.png') }}" id="logo" />
       <h1>Welcome!</h1>
       <em>SHROOMS &bull; Shrooms &bull; shrooms</em>
 
@@ -18,20 +18,21 @@
         
         
         
-    <div class="footer">
-        <div class="container-fluid">
-            <p>Footer...................... </p>
-            <img src="convex.png"width="500" height="500">
-       </div> 
-    </div> 
+    
 
       <div>
-        <h2>Burgers</h2>
-        <ol class="menu-items">
+        <h2>Your VroomShroom</h2>
+        <ol class="result">
           {% for mushroom in mushroomsdata %}
-          <li>{{ mushroom[0] }} <span class="price">{{ mushroom[1] }}</span></li>
-<!-- <img src="caps/{{ mushroom[1] }}.png"> -->
-            <img src="convex/{{ mushroom[1] }}.png">
+          <li>{{ mushroom[0] }} <span class="shape">{{ mushroom[1].png }}</span></li>
+            <li>{{ mushroom[1] }} <span class="shape">{{ mushroom[2] }}</span></li>
+            <li>{{ mushroom[11] }} <span class="shape">{{ mushroom[3] }}</span></li>
+            <li>{{ mushroom[20] }} <span class="shape">{{ mushroom[4] }}</span></li>
+
+            <img src="static/{{ mushroom[1] }}.png">
+            <img src="static/{{ mushroom[8] }}.png">
+            <img src="static/{{ mushroom[11] }}.png">
+            <img src="static/{{ mushroom[4] }}.png">
           {% endfor %}
         </ol>
 

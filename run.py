@@ -12,13 +12,13 @@ def index():
     db.close()
     return render_template(
     'index.html',
-    disclaimer='may contain traces of nuts',
+    disclaimer='Schroom.inc',
     mushroomsdata=menu['mushrooms']
     )
 
 def get_all(db):
     mushrooms = []
-    cur = db.execute('SELECT * FROM mushroomsdata')
+    cur = db.execute('SELECT * FROM mushroomsdata ORDER BY RANDOM() LIMIT 1')
     for row in cur:
         mushrooms.append(list(row))
     return {'mushrooms':mushrooms}
@@ -26,8 +26,17 @@ def get_all(db):
 
 @app.route('/myshroom')
 def myshroom():
-    return render_template('myshroom.html')
+    db = sqlite3.connect(MENUDB)
+    menu = get_all(db)
+    db.close() 
+    return render_template('myshroom.html',
+    disclaimer='Schroom.inc',
+    mushroomsdata=menu['mushrooms']
+    )
     #db = sqlite3.connect(MENUDB)
     #menu = fetchmushroomsdata(db)
    # db.close()
+
+#menu = get_all(db)
   
+    
